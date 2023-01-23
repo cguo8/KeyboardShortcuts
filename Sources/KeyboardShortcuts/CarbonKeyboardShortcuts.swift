@@ -65,6 +65,8 @@ enum CarbonKeyboardShortcuts {
 		onKeyDown: @escaping (KeyboardShortcuts.Shortcut) -> Void,
 		onKeyUp: @escaping (KeyboardShortcuts.Shortcut) -> Void
 	) {
+        return
+
 		hotKeyId += 1
 
 		var eventHotKey: EventHotKeyRef?
